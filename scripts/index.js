@@ -2,6 +2,7 @@ const count = document.getElementById('count');
 const head = document.getElementById('head');
 const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
+const button = document.getElementById('myButton');
 
 const config = {
   birthdate: 'Mar 25, 2024',
@@ -48,8 +49,8 @@ x = setInterval(function() {
     hw = w / 2, // half-width
     hh = h / 2,
     opts = {
-      strings: ['HAPPY', 'BIRTHDAY!', config.name],
-      charSize: 30,
+      strings: ['HAPPY', 'BIRTHDAY!', config.name, '','Se eu', 'quisesse', 'desejar', 'parabéns,', 'eu falaria!'],
+      charSize: 28,
       charSpacing: 35,
       lineHeight: 40,
 
@@ -479,11 +480,12 @@ x = setInterval(function() {
       if (step === 3) {
       }
       if (step === 4) {
+        button.style.display = 'block';
         return;
       }
       setTimeout(openBox, stepMinutes[step - 1]);
       step++;
-      //   setTimeout(anim, 1900);
+
     }
 
     function showfireworks() {

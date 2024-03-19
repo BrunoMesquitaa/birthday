@@ -9,6 +9,23 @@
   <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
   <link rel="stylesheet" href="styles/system-fonts.css" media="all">
   <link rel="stylesheet" href="styles/style.css" media="all">
+  <style>
+    #myButton {
+      text-align: center;
+      text-decoration: none;
+      margin: 0 auto;
+      display: none; 
+      background-color: red; 
+      color: white; 
+      padding: 10px 20px; 
+      font-size: 16px; 
+      border: none; 
+      cursor: pointer;
+      border-radius: 5px;
+      margin-left: 40%;
+      margin-right: 40%;
+    }
+  </style>
 </head>
 
 <body>
@@ -26,11 +43,17 @@
   <div id="merrywrap" class="merrywrap">
     <canvas id="snowfall"></canvas>
     <div class="giftbox">
-      <div class="cover">
-        <div></div>
-      </div>
-      <div class="box"></div>
+    <div class="cover">
+      <div></div>
     </div>
+    <div class="box"></div>
+  </div>
+  <!-- <form action="https://www.youtube.com/playlist?list=PLYGJGYN7zxp4yaJ2PYGSrk2dqzt272t9t">
+    <input id="myButton" type="submit" value="Veja mais!" />
+</form> -->
+
+<a href="https://www.youtube.com/playlist?list=PLYGJGYN7zxp4yaJ2PYGSrk2dqzt272t9t" id="myButton">Veja mais!</a>
+
 </body>
 <script src="scripts/confetti.min.js" charset="utf-8"></script>
 <script src="scripts/index.js" charset="utf-8"></script>
